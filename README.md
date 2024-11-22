@@ -9,3 +9,5 @@
 - The jupyter notebook can be run sequentially, with relevant output displayed below cells as needed.
 
 - 
+changes: add folders for diff assignments, files, etc
+add requirements.txt, etc
