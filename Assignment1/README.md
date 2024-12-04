@@ -1,10 +1,13 @@
-# DSC180Capstone
+# DSC180Capstone - Assignment 1
 
-## Dataset Access  
-- Subway Station Information Dataset is in the repository.  
-- Edges Dataset is too large for inclusion in the repository, but can be accessed at: https://drive.google.com/drive/folders/1fV47SWGv5_AFPR_gRfvK1ra1LfSFCgOw  
-## Required Libraries  
-- The only required libraries to run the notebook are networkX and pandas.
+## Setup
+### Accessing Datasets
+- Subway Station Information Dataset is in the repository, saved as MTA_Subway_Stations_updated.csv.   
+- Edges Dataset can be accessed at: https://drive.google.com/drive/folders/1fV47SWGv5_AFPR_gRfvK1ra1LfSFCgOw
+- Install Edges Dataset via the link above and save it as "edges.csv" in the Assignment1 folder
+## Creating Environment  
+- Requirements.txt contains all packages required to run the notebook
+- `conda create --name assignment1 --file requirements.txt` will create the necessary conda environment
 ## Running Code  
 - The jupyter notebook can be run sequentially, with relevant output displayed below cells as needed.
 
