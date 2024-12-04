@@ -10,7 +10,9 @@
 - `conda create --name assignment1 --file requirements.txt` will create the necessary conda environment
 ## Running Code  
 - The jupyter notebook can be run sequentially, with relevant output displayed below cells as needed.
-
-- 
-changes: add folders for diff assignments, files, etc
-add requirements.txt, etc
+- To use the conda environment in jupyter notebook, you may need to configure jupyter using ipykernel
+  ```
+  conda activate assignment1
+  conda install ipykernel
+  ipython kernel install --user --name=assignment1
+  ```
