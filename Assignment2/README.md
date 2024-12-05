@@ -27,3 +27,7 @@ The data for this assignment can be pulled with the github repository and is loc
   conda install ipykernel
   ipython kernel install --user --name=assignment1
   ```
+- Ensure that model.py and dehnn_layer are present in the same folder as the DEHNN-reimplementation notebook.
+- The notebook serves as the main "driver" of the code, going from data processing to modeling and prediction.
+- The entire code may take approximately 2 hours to run (primarily due to the training of the DE-HNN model.
+- Ensure that there are updates printing with loss to avoid issues.
