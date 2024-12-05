@@ -1,0 +1,1 @@
+This Quarter 1 was split into 2 Assignments. Assignment 1 was an analysis of New York Subway data, which served as an introduction to graph analysis and representation. The code and set-up instructions for that assignment can be found in the readme of the Assignment 1 folder
