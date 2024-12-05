@@ -1,0 +1,36 @@
+Digital Integrated Circuit Graph Data
+FreePDK15/NanGate15 Introductory Distribution 
+2023-07-25  by Abhinav Sinha and W. Rhett Davis, NC State University
+
+These files were generated with physical design of 
+example designs using the 15nm FreePDK predictive process
+design kit and the Si2/Silvaco/NanGate 15nm Open Cell Library.
+
+The database-units-to-user-units (DBUtoUU) conversion factor
+for this dataset is 2000.  Integer dimensions should be 
+divided by this factor to get real dimensions in microns.
+
+In addition to the contents described in the PDF documentation,
+this distribution contains the following additional files:
+
+  [design]_route_opt.def       – Original design data
+  [design]_congestion.rpt      – Routing congestion report
+  [design]-congestion.png      – Screen-shot of layout and congestion
+  route_opt.check_routes       – Routing violations and resources per layer
+  route_opt.report_utilization – Ratio of required area to available area
+  route_opt.report_clock_qor.structure – Detailed clock-tree information
+  route_opt.report_qor         – Summary of system timing and other details
+
+Note that the original LEF files used to create cells.json.gz
+are also provided in the lef directory.
+
+Note finally that the units for both CLK_PER and CLK_UNCERTAINTY in 
+settings.csv is picoseconds.  This will be confusing to some,
+because many variants of the design xbar have a clock-period
+constraint equal to or smaller than the clock uncertainty, 
+which produces unusual results.  This is reflected in the 
+provided route_opt.report_qor files, which show a large number
+of timing violations.  As such, the impact of the CLK_PER
+feature is largely random.  However, the impact of the 
+CORE_UTILIZATION and MAX_ROUTING_LAYER features is still 
+quite useful.
